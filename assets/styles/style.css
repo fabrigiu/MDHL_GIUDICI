@@ -4,10 +4,8 @@
   box-sizing: border-box;
 }
 header {
-  position: relative;
-  height: 100vh;
-  background-size: cover;
-  background-color: #212529;
+  height: 70vh;
+  background-color: #95abc3;
   display: flex;
   justify-content: space-between;
 }
@@ -20,10 +18,10 @@ main {
 h1 {
   align-self: center;
   text-align: center;
-  font-size: 10vh;
+  font-size: 16vh;
   color: aliceblue;
 }
-.nav-bar{
+.nav-bar {
   display: flex;
   flex-direction: column;
   padding: 5px;
@@ -32,11 +30,11 @@ h1 {
 .nav-bar a {
   text-align: center;
   text-decoration: none;
-  border: 1px solid black;
-  background-color: #95ABC3;
+  border: 1px solid rgba(5, 12, 18, 0.797);
+  background-color: #212529;
   color: white;
   padding: 5px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.011);
+  box-shadow: 2px 2px 2px 1px rgba(22, 28, 32, 0.527);
   margin-left: 5px;
 }
 
@@ -44,31 +42,84 @@ a[href="#"] {
   background-color: rgba(21, 35, 43, 0.831);
   color: aliceblue;
 }
-.main-content{
+.main-content {
   display: flex;
   justify-content: space-around;
 }
-.main-content section,aside{
+.main-content section,
+aside {
   padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-aside img{
+.main-content section {
+  gap: 50px;
+}
+aside img {
   height: 30vh;
-  width: 30vh;
-  object-fit:cover;
+  width: 50vh;
+  object-fit: cover;
 }
 
-footer{
+footer {
   background-color: #95abc3;
   display: flex;
   justify-content: space-between;
   padding-right: 5px;
 }
-footer>p{
+footer > p {
   color: #070a0d;
 }
-.socials img{
+.socials img {
   height: 1rem;
+}
+
+.contact {
+  display: flex;
+  gap: 1rem;
+}
+.sch-format {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sch-format h2 {
+  align-self: center;
+}
+table {
+  align-self: center;
+  table-layout: auto;
+  border-collapse: separate;
+}
+#schedule-cont {
+  display: flex;
+}
+
+th,
+td {
+  padding: 0.5rem;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.rules-content{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1rem;
+}
+ol{
+  gap: .5rem;
+}
+#seco{
+  list-style-type: lower-latin;
+}
+ul{
+  list-style-type: circle;
 }
