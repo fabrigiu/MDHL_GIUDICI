@@ -116,10 +116,12 @@ td {
 }
 ol{
   gap: .5rem;
+  list-style-position: inside;
 }
 #seco{
   list-style-type: lower-latin;
 }
 ul{
+  list-style-position: inside;
   list-style-type: circle;
 }
