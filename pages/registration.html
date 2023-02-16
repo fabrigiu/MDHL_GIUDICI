@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <header class="form-header">
+        <img class="logo" src="../assets/img/LogoMightyducks-01.png" alt="logo">
+        <nav class="nav-bar">
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About MDHL</a>
+            <a href="./schedule.html">Schedule</a>
+            <a href="./rules.html">Rules</a>
+            <a href="#">Registration</a>
+        </nav>
+    </header>
+    <main class="form-main">
+        <h1>Registration Form</h1>
+        <div class="r-form">
+            <form action="../show_data.html" method="get">
+                <fieldset>
+
+                    <fieldset>
+                        <label for="name">Player's First Name:</label>
+                        <input type="text" name="first-name" id="name">
+                        <label for="l-name">Last Name:</label>
+                        <input type="text" name="last-name" id="l-name">
+                        <label for="address">Street Address:</label>
+                        <input type="text" name="address" id="address">
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city">
+                        <label for="zip-code">Zip Code:</label>
+                        <input type="number" name="zip-code" id="zip-code">
+                        <label for="b-date">Birth Date (mm/dd/yyyy):</label>
+                        <input type="date" name="birth-date" id="b-date">
+                        <label for="gender">Gender:</label>
+                        <input type="radio" name="gender" id="gender">
+                        <label for="grade">Grade:</label>
+                        <input type="checkbox" name="grade" id="grade">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Which elementary school do you live near?</legend>
+                        <label for="closest">Closest School</label>
+                        <select name="closest-school" id="closest">
+                            <option value="">--Please choose an option--</option>
+                            <option value="AJK">AJ Kattzenmaier</option>
+                            <option value="GB">Greenbay</option>
+                            <option value="HAY">Howard A Yeager</option>
+                            <option value="MPH">Majorie P Hart</option>
+                            <option value="NE">North Elementary</option>
+                            <option value="SE">South Elementary</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Which position(s) do you normally play?(check all that apply)</legend>
+                        <input type="checkbox" name="position" id="position">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Uniform Size</legend>
+                        <label for="youth-s">Youth Small</label>
+                        <input type="radio" name="uniform-size" id="youth-s" value="ys">
+
+                        <label for="youth-m">Youth Medium</label>
+                        <input type="radio" name="uniform-size" id="youth-m" value="ym">
+
+                        <label for="youth-l">Youth Large</label>
+                        <input type="radio" name="uniform-size" id="youth-l" value="yl">
+
+                        <label for="small">Small</label>
+                        <input type="radio" name="uniform-size" id="small" value="s">
+
+                        <label for="medium">Medium</label>
+                        <input type="radio" name="uniform-size" id="medium" value="m">
+
+                        <label for="large">Large</label>
+                        <input type="radio" name="uniform-size" id="large" value="l">
+
+                        <label for="e-large">Extra-Large</label>
+                        <input type="radio" name="uniform-size" id="e-large" value="el">
+                    </fieldset>
+                    <input type="submit">
+                </fieldset>
+            </form>
+            <h2></h2>
+        </div>
+    </main>
+    <footer>
+        <p>MDHL &#174;</p>
+        <div class="contact">
+            <h4>Contact:</h4>
+            <p>
+                please email us at
+                <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a>
+            </p>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="../assets/img/facebook.png" alt="facebook-logo">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../assets/img/instagram.png" alt="instagram-logo">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="../assets/img/twitter.png" alt="twitter-logo">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
