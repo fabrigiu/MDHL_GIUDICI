@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <header class="form-header">
+        <img class="logo" src="../assets/img/LogoMightyducks-01.png" alt="logo">
+        <nav class="nav-bar">
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About MDHL</a>
+            <a href="./schedule.html">Schedule</a>
+            <a href="./rules.html">Rules</a>
+            <a href="#">Registration</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="form-main">
+        <h1>Registration Form</h1>
+        <form class="r-form" action="../show_data.html" method="get">
+            <fieldset id="first-fs">
+                <div class="basic-info">
+                    <label for="name">Player's First Name:</label>
+                    <input type="text" name="first-name" id="name">
+    
+                    <label for="l-name">Last Name:</label>
+                    <input type="text" name="last-name" id="l-name">
+    
+                    <label for="address">Street Address:</label>
+                    <input type="text" name="address" id="address">
+    
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div class="basic-info">
+
+                    <label for="zip-code">Zip Code:</label>
+                    <input type="number" name="zip-code" id="zip-code">
+    
+                    <label for="b-date">Birth Date (mm/dd/yyyy):</label>
+                    <input type="date" name="birth-date" id="b-date">
+                    <div>
+                        <label>Gender:</label>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male" value="male">
+                    </div>
+                    <div>
+                        <label>Grade:</label>
+                        <label for="pre-school">Pre-school</label>
+                        <input type="radio" name="grade" id="pre-school" value="pre">
+                        <label for="first">1st</label>
+                        <input type="radio" name="grade" id="first" value="1">
+                        <label for="sec">2nd</label>
+                        <input type="radio" name="grade" id="sec" value="2">
+                        <label for="third">3rd</label>
+                        <input type="radio" name="grade" id="third" value="3">
+                        <label for="fourth">4th</label>
+                        <input type="radio" name="grade" id="fourth" value="4">
+                        <label for="fifth">5th</label>
+                        <input type="radio" name="grade" id="fifth" value="5">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Which elementary school do you live near?</legend>
+                <label for="closest">Closest School</label>
+                <select name="closest-school" id="closest">
+                    <option value="">--Please choose an option--</option>
+                    <option value="AJK">AJ Kattzenmaier</option>
+                    <option value="GB">Greenbay</option>
+                    <option value="HAY">Howard A Yeager</option>
+                    <option value="MPH">Majorie P Hart</option>
+                    <option value="NE">North Elementary</option>
+                    <option value="SE">South Elementary</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Which position(s) do you normally play?(check all that apply)</legend>
+                <label for="fwrd">Forward</label>
+                <input type="checkbox" name="position" id="fwrd" value="forward">
+                <label for="mdf">Midfield</label>
+                <input type="checkbox" name="position" id="mdf" value="midfield">
+                <label for="df">Defense</label>
+                <input type="checkbox" name="position" id="df" value="defense">
+                <label for="gk">Goalkeeper</label>
+                <input type="checkbox" name="position" id="gk" value="goalkeeper">
+            </fieldset>
+            <fieldset>
+                <legend>Uniform Size</legend>
+                <label for="youth-s">Youth Small</label>
+                <input type="radio" name="uniform-size" id="youth-s" value="ys">
+
+                <label for="youth-m">Youth Medium</label>
+                <input type="radio" name="uniform-size" id="youth-m" value="ym">
+
+                <label for="youth-l">Youth Large</label>
+                <input type="radio" name="uniform-size" id="youth-l" value="yl">
+
+                <label for="small">Small</label>
+                <input type="radio" name="uniform-size" id="small" value="s">
+
+                <label for="medium">Medium</label>
+                <input type="radio" name="uniform-size" id="medium" value="m">
+
+                <label for="large">Large</label>
+                <input type="radio" name="uniform-size" id="large" value="l">
+
+                <label for="e-large">Extra-Large</label>
+                <input type="radio" name="uniform-size" id="e-large" value="el">
+            </fieldset>
+            <fieldset>
+                <legend>Permission to play</legend>
+                <p>
+                    I, the parent or guardian of the minor registrant, agree that the registrant and i will
+                    abide by all the rules of the Mighty Ducks Hockey League(MDHL). In recognizing the
+                    possibility of physical injury associeted with hockey and in consideration for the "League"
+                    accepting the registrant for its hockey programs and activities, I hereby release,
+                    discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and
+                    volunteers, including the facilities used for practices and games, against any claim by or
+                    on behalf of the registrant as a result of the registrant's participation in the
+                    programand/orbeing transported to or from MDHL sponsored activities, which transportation.
+                    By entering my name below, I herebyagree and authorize the above. In addition, by signing
+                    below, I also acknowledge the i have read the cancellation policy and agree to its terms.
+                </p>
+                <label for="guardian">Parent/Guardian Name:</label>
+                <input type="text" name="parent-guardian" id="guardian">
+                <label for="date2">Date:</label>
+                <input type="date" name="permit-date" id="date2">
+            </fieldset>
+            <input type="submit">
+        </form>
+    </main>
+    <footer>
+        <p>MDHL &#174;</p>
+        <div class="contact">
+            <h4>Contact:</h4>
+            <p>
+                please email us at
+                <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a>
+            </p>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="../assets/img/facebook.png" alt="facebook-logo">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../assets/img/instagram.png" alt="instagram-logo">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="../assets/img/twitter.png" alt="twitter-logo">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
