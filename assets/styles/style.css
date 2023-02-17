@@ -172,3 +172,19 @@ fieldset{
   flex-direction: column;
   gap: 10px;
 }
+
+.maps{
+  display:flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+.map-box{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #212529;
+  border: #212529 2px solid;
+  box-shadow: 2px 2px 2px 1px rgba(22, 28, 32, 0.527);
+}
+
