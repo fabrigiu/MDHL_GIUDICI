@@ -141,14 +141,30 @@ ul {
 }
 .form-main{
   background-color: #212529;
+  padding-bottom: 2rem;
 }
 .r-form{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
   padding: 1rem;
   margin-left: 15%;
   margin-right: 15%;
   background-color: white;
-  box-shadow: #070a0d;
+  gap: 1rem;
+}
+fieldset{
+  padding: 3px;
+}
+#first-fs{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+.basic-info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
